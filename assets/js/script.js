@@ -9,7 +9,8 @@ var forecastContainerEl = document.querySelector("#forecast-container");
 var weatherDayIconEl = document.querySelector("#weather-day-icon");
 var buttonContainerEl = document.querySelector("#button-container");
 
-var baseUrl = "http://api.openweathermap.org/";
+// Had to change http in baseUrl to https to fix fetch() error.
+var baseUrl = "https://api.openweathermap.org/";
 var apiKey = "54330efedf22e2ce54f6bbcee8ed5498";
 
 function populate5day(data) {
